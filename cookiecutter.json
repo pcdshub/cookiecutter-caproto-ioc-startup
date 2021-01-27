@@ -1,0 +1,20 @@
+{
+    "package_organization": "pcdshub",
+    "package_repo": "archstats",
+    "ioc_organization": "{{ cookiecutter.package_organization }}",
+    "ioc_name": "ioc-{{ cookiecutter.package_repo }}",
+    "description": "{{ cookiecutter.ioc_name }}",
+    "ioc_start_command": "{{ cookiecutter.package_repo }} --list-pvs",
+    "pv_prefix": "{{ cookiecutter.ioc_name.upper().replace('-', ':') }}",
+    "author_name": "SLAC National Accelerator Laboratory",
+    "python_version": "3.7",
+    "conda_init_script": "/reg/g/pcds/pyps/conda/pcds_conda",
+    "EPICS_CA_AUTO_ADDR_LIST": ["YES", "NO"],
+    "EPICS_CA_ADDR_LIST": "",
+    "IOC_DATA_PATH": "/reg/d/iocData/${IOC}",
+    "LOG_FILE_PATH": "${IOC_DATA_PATH}/iocInfo/ioc.log",
+    "CAPTURE_LOGS": ["0", "1"],
+    "license": ["SLAC", "BNL", "MIT", "BSD-3"],
+    "year": "2021",
+    "initialize_environment": ["YES", "NO"]
+}
