@@ -95,8 +95,8 @@ Installing Development Requirements
 
   $ pip install -Ur requirements.txt
   $ pip install -Ur dev-requirements.txt
-  
-  
+
+
 Cookiecutter?
 -------------
 
