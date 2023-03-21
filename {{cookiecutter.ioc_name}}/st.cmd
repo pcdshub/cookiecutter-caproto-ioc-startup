@@ -2,10 +2,9 @@
 
 . config.sh
 
-source /reg/g/pcds/pyps/conda/pcds_conda
+source "${TOP}/activate_env.sh"
 
 run_ioc() {
-    source "${TOP}/activate_env.sh"
     echo ""
     echo "* Version information:"
     python --version
