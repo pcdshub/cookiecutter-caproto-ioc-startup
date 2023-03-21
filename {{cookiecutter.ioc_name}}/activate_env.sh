@@ -24,8 +24,8 @@ echo "  - EPICS_CA_ADDR_LIST:      $EPICS_CA_ADDR_LIST"
 echo "  - CAPTURE_LOGS:            $CAPTURE_LOGS"
 echo "  - LOG_FILE_PATH:           $LOG_FILE_PATH"
 
-echo "* Deactivating any existing conda environment"
-conda deactivate || echo "Conda deactivate failed; continuing..."
+echo "* Returning to the conda base environment"
+conda activate
 
 echo "* Activating the conda environment: $CONDA_ENV_PATH"
 conda activate --no-stack "$CONDA_ENV_PATH"
